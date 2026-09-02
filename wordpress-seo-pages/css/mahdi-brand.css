@@ -1,0 +1,257 @@
+/**
+ * Mahdi Hoseiny Brand Styles
+ * Colors: #0f172a (dark) | #b91c1c (red) | #14b8a6 (teal) | #ffffff (white)
+ * Add via: Appearance → Customize → Additional CSS
+ * Or: Elementor → Site Settings → Custom CSS
+ */
+
+:root {
+  --mh-dark: #0f172a;
+  --mh-red: #b91c1c;
+  --mh-red-hover: #991b1b;
+  --mh-teal: #14b8a6;
+  --mh-teal-hover: #0d9488;
+  --mh-white: #ffffff;
+  --mh-gray-50: #f8fafc;
+  --mh-gray-100: #f1f5f9;
+  --mh-gray-600: #475569;
+  --mh-radius: 12px;
+  --mh-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+}
+
+/* ── Hero Sections ── */
+.mh-hero {
+  background: linear-gradient(135deg, var(--mh-dark) 0%, #1e293b 100%);
+  color: var(--mh-white);
+  padding: 80px 24px;
+  text-align: center;
+  border-radius: var(--mh-radius);
+}
+
+.mh-hero h1 {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.mh-hero p {
+  font-size: 1.125rem;
+  color: #cbd5e1;
+  max-width: 640px;
+  margin: 0 auto 32px;
+  line-height: 1.8;
+}
+
+.mh-hero .mh-highlight {
+  color: var(--mh-teal);
+}
+
+/* ── Buttons ── */
+.mh-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.mh-btn-primary {
+  background: var(--mh-red);
+  color: var(--mh-white);
+}
+
+.mh-btn-primary:hover {
+  background: var(--mh-red-hover);
+  color: var(--mh-white);
+  transform: translateY(-2px);
+}
+
+.mh-btn-secondary {
+  background: transparent;
+  color: var(--mh-white);
+  border: 2px solid var(--mh-teal);
+}
+
+.mh-btn-secondary:hover {
+  background: var(--mh-teal);
+  color: var(--mh-white);
+}
+
+.mh-btn-teal {
+  background: var(--mh-teal);
+  color: var(--mh-white);
+}
+
+.mh-btn-teal:hover {
+  background: var(--mh-teal-hover);
+  color: var(--mh-white);
+}
+
+/* ── Section Layouts ── */
+.mh-section {
+  padding: 64px 24px;
+}
+
+.mh-section-light {
+  background: var(--mh-gray-50);
+}
+
+.mh-section-dark {
+  background: var(--mh-dark);
+  color: var(--mh-white);
+}
+
+.mh-section h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  color: var(--mh-dark);
+  margin-bottom: 12px;
+}
+
+.mh-section-dark h2 {
+  color: var(--mh-white);
+}
+
+.mh-section .mh-subtitle {
+  color: var(--mh-gray-600);
+  font-size: 1.05rem;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+/* ── Service Cards ── */
+.mh-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.mh-card {
+  background: var(--mh-white);
+  border-radius: var(--mh-radius);
+  padding: 32px 24px;
+  box-shadow: var(--mh-shadow);
+  border-top: 4px solid var(--mh-teal);
+  transition: transform 0.2s ease;
+}
+
+.mh-card:hover {
+  transform: translateY(-4px);
+}
+
+.mh-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--mh-dark);
+  margin-bottom: 12px;
+}
+
+.mh-card p {
+  color: var(--mh-gray-600);
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.mh-card .mh-card-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(20, 184, 166, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+/* ── CTA Banner ── */
+.mh-cta {
+  background: linear-gradient(135deg, var(--mh-red) 0%, #dc2626 100%);
+  color: var(--mh-white);
+  padding: 48px 32px;
+  border-radius: var(--mh-radius);
+  text-align: center;
+}
+
+.mh-cta h2 {
+  color: var(--mh-white) !important;
+  margin-bottom: 12px;
+}
+
+.mh-cta p {
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
+/* ── Trust / Stats ── */
+.mh-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+  text-align: center;
+}
+
+.mh-stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--mh-teal);
+}
+
+.mh-stat-label {
+  color: var(--mh-gray-600);
+  font-size: 0.9rem;
+}
+
+/* ── FAQ Accordion (Elementor compatible) ── */
+.mh-faq-item {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 20px 0;
+}
+
+.mh-faq-item h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--mh-dark);
+  margin-bottom: 8px;
+}
+
+.mh-faq-item p {
+  color: var(--mh-gray-600);
+  line-height: 1.8;
+}
+
+/* ── Breadcrumb / Internal Links ── */
+.mh-breadcrumb {
+  font-size: 0.85rem;
+  color: var(--mh-gray-600);
+  margin-bottom: 24px;
+}
+
+.mh-breadcrumb a {
+  color: var(--mh-teal);
+  text-decoration: none;
+}
+
+/* ── Logo Placeholder (no logo yet) ── */
+.mh-logo-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--mh-dark);
+  letter-spacing: -0.5px;
+}
+
+.mh-logo-text span {
+  color: var(--mh-red);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .mh-hero { padding: 48px 16px; }
+  .mh-section { padding: 40px 16px; }
+  .mh-cards { grid-template-columns: 1fr; }
+}

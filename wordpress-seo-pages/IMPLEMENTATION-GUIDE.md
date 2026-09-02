@@ -68,6 +68,25 @@
 5. ✅ `/ghimat-moshavereh` — قیمت
 6. 🔄 صفحه اصلی — بازنویسی (فایل `00-homepage-seo.md`)
 
+### صفحات خدمات فرعی (پوشه `pages/services/`):
+
+| URL | فایل | کلمه کلیدی |
+|---|---|---|
+| `/services/hoviat-bazari` | `hoviat-bazari.md` | طراحی هویت بصری برند |
+| `/services/estrategi-brand` | `estrategi-brand.md` | استراتژی برند |
+| `/services/estrategi-bazaryabi` | `estrategi-bazaryabi.md` | استراتژی بازاریابی |
+| `/services/digital-marketing` | `digital-marketing.md` | مشاوره بازاریابی دیجیتال |
+| `/services/online` | `online.md` | مشاوره بازاریابی آنلاین |
+| `/services/manshor-brand` | `manshor-brand.md` | تدوین منشور برند |
+| `/services/estrateji-mohtava` | `estrateji-mohtava.md` | استراتژی محتوا |
+| `/services/rebranding` | `rebranding.md` | ری‌برندینگ |
+| `/services/brand-shakhsi` | `brand-shakhsi.md` | برندینگ شخصی |
+| `/services/logo` | `logo.md` | طراحی لوگو حرفه‌ای |
+| `/services/social-media` | `social-media.md` | مدیریت شبکه‌های اجتماعی |
+| `/services/instagram-ads` | `instagram-ads.md` | تبلیغات اینستاگرام |
+| `/services/marketing-campaign` | `marketing-campaign.md` | طراحی کمپین بازاریابی |
+| `/services/seo-content` | `seo-content.md` | سئو و بازاریابی محتوا |
+
 ---
 
 ## مرحله ۵: ساختار Elementor هر صفحه
@@ -122,8 +141,18 @@
   └── خدمات فرعی ▼
         ├── هویت بصری برند
         ├── استراتژی برند
+        ├── استراتژی بازاریابی
         ├── بازاریابی دیجیتال
-        └── ...
+        ├── مشاوره آنلاین
+        ├── منشور برند
+        ├── استراتژی محتوا
+        ├── ری‌برندینگ
+        ├── برندینگ شخصی
+        ├── طراحی لوگو
+        ├── شبکه‌های اجتماعی
+        ├── تبلیغات اینستاگرام
+        ├── کمپین بازاریابی
+        └── سئو و محتوا
 
 مقالات
 درباره من
@@ -180,6 +209,7 @@
 - [ ] CSS برند اضافه شد
 - [ ] رنگ‌های Global Elementor تنظیم شد
 - [ ] ۵ صفحه اولویت بالا ساخته شد
+- [ ] ۱۴ صفحه خدمات فرعی ساخته شد
 - [ ] صفحه اصلی بازنویسی شد
 - [ ] منوی سایت به‌روز شد
 - [ ] لینک‌سازی داخلی انجام شد

@@ -29,22 +29,27 @@
 |---|---|---|
 | `/moshaver-brand` | مشاور برند | مشاور برند |
 | `/moshaver-bazaryabi` | مشاور بازاریابی | مشاور بازاریابی |
-| `/services/hoviat-bazari` | طراحی هویت بصری برند | طراحی هویت بصری برند |
-| `/services/estrategi-brand` | استراتژی برند | استراتژی برند |
-| `/services/estrategi-bazaryabi` | استراتژی بازاریابی | استراتژی بازاریابی |
-| `/services/digital-marketing` | مشاوره بازاریابی دیجیتال | مشاوره بازاریابی دیجیتال |
-| `/services/online` | مشاوره آنلاین | مشاوره بازاریابی آنلاین |
+| `/services/hoviat-bazari` | طراحی هویت بصری برند | طراحی هویت بصری برند | `services/hoviat-bazari.md` |
+| `/services/estrategi-brand` | استراتژی برند | استراتژی برند | `services/estrategi-brand.md` |
+| `/services/estrategi-bazaryabi` | استراتژی بازاریابی | استراتژی بازاریابی | `services/estrategi-bazaryabi.md` |
+| `/services/digital-marketing` | مشاوره بازاریابی دیجیتال | مشاوره بازاریابی دیجیتال | `services/digital-marketing.md` |
+| `/services/online` | مشاوره آنلاین | مشاوره بازاریابی آنلاین | `services/online.md` |
 
 ### اولویت ۳ — هفته سوم
 
-| URL پیشنهادی | عنوان صفحه | کلمه کلیدی اصلی |
-|---|---|---|
-| `/services/manshor-brand` | تدوین منشور برند | تدوین منشور برند |
-| `/services/estrateji-mohtava` | استراتژی محتوا | استراتژی محتوا برای کسب‌وکار |
-| `/services/rebranding` | ری‌برندینگ | ری‌برندینگ کسب‌وکار |
-| `/services/brand-shakhsi` | برندینگ شخصی | برندینگ شخصی |
-| `/portfolio` | نمونه‌کارها | نمونه استراتژی بازاریابی |
-| `/testimonials` | نظرات مشتریان | نظرات مشتریان مشاور بازاریابی |
+| URL پیشنهادی | عنوان صفحه | کلمه کلیدی اصلی | فایل محتوا |
+|---|---|---|---|
+| `/services/manshor-brand` | تدوین منشور برند | تدوین منشور برند | `services/manshor-brand.md` |
+| `/services/estrateji-mohtava` | استراتژی محتوا | استراتژی محتوا برای کسب‌وکار | `services/estrateji-mohtava.md` |
+| `/services/rebranding` | ری‌برندینگ | ری‌برندینگ کسب‌وکار | `services/rebranding.md` |
+| `/services/brand-shakhsi` | برندینگ شخصی | برندینگ شخصی | `services/brand-shakhsi.md` |
+| `/services/logo` | طراحی لوگو | طراحی لوگو حرفه‌ای | `services/logo.md` |
+| `/services/social-media` | شبکه‌های اجتماعی | مدیریت شبکه‌های اجتماعی | `services/social-media.md` |
+| `/services/instagram-ads` | تبلیغات اینستاگرام | مشاوره تبلیغات اینستاگرام | `services/instagram-ads.md` |
+| `/services/marketing-campaign` | کمپین بازاریابی | طراحی کمپین بازاریابی | `services/marketing-campaign.md` |
+| `/services/seo-content` | سئو و محتوا | مشاوره سئو و بازاریابی محتوا | `services/seo-content.md` |
+| `/portfolio` | نمونه‌کارها | نمونه استراتژی بازاریابی | — |
+| `/testimonials` | نظرات مشتریان | نظرات مشتریان مشاور بازاریابی | — |
 
 ## دسته‌بندی وبلاگ
 

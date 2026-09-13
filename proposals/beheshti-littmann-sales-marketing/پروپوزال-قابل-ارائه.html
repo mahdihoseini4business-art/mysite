@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>پروپوزال توسعه فروش و بازاریابی | بهشتی لیتمن</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a2332;
+      --muted: #5a6577;
+      --line: #d8dee8;
+      --bg: #f7f4ef;
+      --paper: #fffdf9;
+      --accent: #0f5c4c;
+      --accent-soft: #e6f2ef;
+      --warn: #8a5a16;
+      --card: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Vazirmatn", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 500px at 100% -10%, #dceee8 0%, transparent 55%),
+        radial-gradient(900px 400px at -10% 20%, #f0e6d8 0%, transparent 50%),
+        var(--bg);
+      line-height: 1.85;
+      font-size: 15.5px;
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    .hero {
+      background: linear-gradient(145deg, #0f5c4c 0%, #1a3d36 55%, #243447 100%);
+      color: #f4faf8;
+      border-radius: 18px;
+      padding: 42px 36px;
+      margin-bottom: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -40px -60px auto;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+    }
+    .hero .eyebrow {
+      opacity: 0.8;
+      font-size: 13px;
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+    }
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      line-height: 1.45;
+      font-weight: 800;
+    }
+    .hero p {
+      margin: 0;
+      max-width: 46ch;
+      opacity: 0.92;
+      font-size: 0.98rem;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .chip {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 12.5px;
+    }
+
+    section {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 28px 26px;
+      margin-bottom: 18px;
+      box-shadow: 0 1px 0 rgba(26,35,50,0.03);
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.25rem;
+      color: var(--accent);
+      font-weight: 800;
+    }
+    h3 {
+      margin: 22px 0 10px;
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+    p { margin: 0 0 12px; color: var(--ink); }
+    .muted { color: var(--muted); }
+    ul, ol { margin: 0 0 12px; padding-right: 18px; }
+    li { margin-bottom: 6px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      margin: 12px 0 8px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: right;
+      vertical-align: top;
+    }
+    th {
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 700;
+    }
+    tr:nth-child(even) td { background: #fcfbf8; }
+
+    .option {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px 16px 8px;
+      margin: 12px 0;
+      background: var(--card);
+    }
+    .option h4 {
+      margin: 0 0 8px;
+      font-size: 0.98rem;
+      color: var(--ink);
+    }
+    .tag {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-left: 6px;
+    }
+    .recommend {
+      background: #fff8e8;
+      border: 1px solid #ead7a8;
+      color: var(--warn);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .flow {
+      font-family: ui-monospace, monospace;
+      background: #f0f3f7;
+      border-radius: 10px;
+      padding: 14px;
+      font-size: 13px;
+      line-height: 1.7;
+      overflow-x: auto;
+      direction: ltr;
+      text-align: center;
+    }
+    .checklist label {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      margin-bottom: 8px;
+      cursor: default;
+    }
+    .checklist input { margin-top: 7px; }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    @media (max-width: 720px) {
+      .two-col { grid-template-columns: 1fr; }
+      .hero { padding: 28px 22px; }
+      section { padding: 22px 18px; }
+    }
+    .footer-note {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 24px;
+    }
+    @media print {
+      body { background: white; }
+      .wrap { padding: 0; max-width: none; }
+      section, .hero { break-inside: avoid; box-shadow: none; }
+      .hero { border-radius: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="eyebrow">پروپوزال مسیر توسعه فروش و بازاریابی</div>
+      <h1>تجهیزات پزشکی بهشتی لیتمن</h1>
+      <p>
+        مسیر پیشنهادی برای راه‌اندازی CRM، فروش تلفنی و هم‌راستایی بازاریابی؛
+        همراه با گزینه‌های تصمیم کارفرما برای تعیین سمت‌وسوی حرکت و شروع پروژه.
+      </p>
+      <div class="meta">
+        <span class="chip">نقش: مدیر فروش و بازاریابی تلفنی / توسعه کسب‌وکار</span>
+        <span class="chip">محصول فعلی: گوشی پزشکی</span>
+        <span class="chip">نسخه ۱.۰</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>۱. خلاصه مدیریتی</h2>
+      <p>
+        فروش فعلی مجموعه عمدتاً از طریق رابط‌ها و نمایندگی‌های دانشجویی در دانشگاه‌های استان‌های مختلف انجام می‌شود.
+        اطلاعات خریدار پس از فروش در سایت ثبت و ارسال‌ها به نوبت انجام می‌گردد. تاکنون CRM برای ثبت مشتریان بالقوه‌ای که به خرید منجر نشده‌اند وجود نداشته است.
+      </p>
+      <p>
+        پیشنهاد این سند، ایجاد لایه فروش داده‌محور شامل CRM، نیروی فروش تلفنی درصدی، کمپین‌های فروش و اتصال جذب لید به تبدیل است.
+        کارفرما با انتخاب گزینه‌های زیر، مسیر اجرا را نهایی می‌کند.
+      </p>
+    </section>
+
+    <section>
+      <h2>۲. وضعیت فعلی و تصویر هدف</h2>
+      <div class="two-col">
+        <div>
+          <h3>وضعیت فعلی</h3>
+          <ul>
+            <li>کانال اصلی: رابط‌های دانشگاهی استانی</li>
+            <li>پاداش رابط: گوشی رایگان به‌ازای چند فروش</li>
+            <li>ثبت فقط پس از خرید</li>
+            <li>بدون CRM و فروش تلفنی سازمان‌یافته</li>
+          </ul>
+        </div>
+        <div>
+          <h3>فرصت ازدست‌رفته</h3>
+          <ul>
+            <li>لید بدون خرید پیگیری نمی‌شود</li>
+            <li>فروش مجدد سیستماتیک نیست</li>
+            <li>داده کانال‌ها پراکنده است</li>
+            <li>کمپین قابل اندازه‌گیری نداریم</li>
+          </ul>
+        </div>
+      </div>
+      <h3>قیف هدف</h3>
+      <div class="flow">
+        Lead (Site / Page / Campaign)
+        → CRM
+        → Phone Sales Follow-up
+        → Sale / Nurture / Repeat
+      </div>
+    </section>
+
+    <section>
+      <h2>تصمیم ۱ — دامنه استقرار CRM</h2>
+
+      <div class="option">
+        <h4><span class="tag">گزینه الف</span> CRM فقط برای تیم فروش تلفنی</h4>
+        <p class="muted">راه‌اندازی سریع‌تر، هزینه و مقاومت کمتر؛ اما داده فروش ناقص می‌ماند و کنترل روی نماینده‌ها محدود است.</p>
+      </div>
+
+      <div class="option">
+        <h4><span class="tag">گزینه ب</span> الزام همه کانال‌ها (تلفنی + حضوری + نمایندگان)</h4>
+        <p class="muted">کنترل کامل داده، گزارش استانی/فردی/کانالی و پایه سیستم‌سازی؛ با نیاز بیشتر به آموزش و تغییر فرآیند.</p>
+        <p>تیم‌ها می‌توانند جدا تعریف شوند: تلفنی / حضوری / نمایندگی، یا حتی به تفکیک استان.</p>
+      </div>
+
+      <div class="recommend">
+        پیشنهاد: شروع با تیم تلفنی در ۳۰ روز اول، سپس اتصال حضوری‌ها و سرپرست‌های استانی، و در نهایت الزام حداقلی رابط‌ها — حرکت به‌سمت گزینه ب.
+      </div>
+    </section>
+
+    <section>
+      <h2>تصمیم ۲ — زیرساخت تلفن تیم فروش</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>معیار</th>
+            <th>سیم‌کارت شخصی</th>
+            <th>سیم‌کارت سازمانی</th>
+            <th>مرکز تماس ابری (نواتل و مشابه)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>هزینه راه‌اندازی</td>
+            <td>تقریباً صفر</td>
+            <td>۲۰–۶۰ هزار تومان / خط + زمان اداری</td>
+            <td>خرید سرشماره از حدود ۲۰۰–۵۰۰ هزار تومان به بالا</td>
+          </tr>
+          <tr>
+            <td>هزینه ماهانه تقریبی</td>
+            <td>۲۰۰–۵۰۰ هزار / نفر</td>
+            <td>۳۰۰–۸۰۰ هزار / نفر</td>
+            <td>۱۹۰–۳۶۰ هزار / کاربر + کانال + تعرفه تماس؛ تیم ۳ نفره حدود ۱.۲–۲.۵ میلیون</td>
+          </tr>
+          <tr>
+            <td>مالکیت شماره و داده</td>
+            <td>ضعیف (نزد کارشناس)</td>
+            <td>خوب (سازمان)</td>
+            <td>عالی (سازمان + لاگ و ضبط)</td>
+          </tr>
+          <tr>
+            <td>گزارش، کیفیت، اتصال CRM</td>
+            <td>ضعیف</td>
+            <td>متوسط</td>
+            <td>عالی</td>
+          </tr>
+          <tr>
+            <td>تصویر برند</td>
+            <td>ضعیف</td>
+            <td>متوسط تا خوب</td>
+            <td>عالی</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>مزایا و معایب کوتاه</h3>
+      <ul>
+        <li><strong>شخصی:</strong> سریع و ارزان؛ اما غیرحرفه‌ای، پرریسک خروج نیرو، بدون کنترل کیفیت.</li>
+        <li><strong>سازمانی:</strong> شروع رسمی مناسب تیم کوچک؛ مالکیت شماره با شرکت؛ امکانات مرکز تماس محدود.</li>
+        <li><strong>نواتل/ابری:</strong> صف، IVR، ضبط، گزارش اپراتور و اتصال CRM؛ هزینه ماهانه بالاتر و نیاز به اینترنت پایدار.</li>
+      </ul>
+      <div class="recommend">
+        پیشنهاد: اگر هدف مقیاس و کیفیت است، مرکز تماس ابری. اگر بودجه محدود است، شروع با سیم‌کارت سازمانی و انتقال به ابری ظرف چند هفته.
+      </div>
+    </section>
+
+    <section>
+      <h2>تصمیم ۳ و ۴ — آموزش‌ها</h2>
+      <div class="two-col">
+        <div class="option">
+          <h4>۳) آموزش فنی محصول</h4>
+          <p>بر عهده <strong>تیم فنی</strong>: مدل‌ها، کاربردها، مقایسه، FAQ فنی، شبیه‌سازی پاسخ در تماس. حداقل ۳ جلسه + بروزرسانی با محصول جدید.</p>
+        </div>
+        <div class="option">
+          <h4>۴) آموزش فروش و استراتژی</h4>
+          <p>بر عهده <strong>اینجانب</strong>: قیف فروش، اسکript، مدیریت اعتراض، بستن معامله، فروش مجدد، KPI و تقویم کمپین.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>تصمیم ۵ — مدل مدیریت فروش و دیجیتال مارکتینگ</h2>
+
+      <div class="option">
+        <h4><span class="tag">حالت الف</span> مدیریت هم‌زمان دیجیتال مارکتینگ + فروش</h4>
+        <p>پیج، سایت، تیم تلفنی و اجرای استراتژی فروش زیر یک مدیریت واحد. یکپارچگی پیام و کمپین بالا است.</p>
+        <p class="muted"><strong>تفاوت با ج:</strong> در حالت الف معمولاً کارفرما/مدیرعامل استراتژی کلان فروش را تعیین می‌کند و مدیر فروش‌بازاریابی مسئول طراحی اجرایی و پیاده‌سازی یکپارچه است.</p>
+      </div>
+
+      <div class="option">
+        <h4><span class="tag">حالت ب</span> فقط مدیریت تیم فروش تلفنی</h4>
+        <p>تمرکز روی تبدیل لید به فروش و فروش مجدد. یک مدیر جدا برای دیجیتال مارکتینگ جذب و پرورش لید را انجام می‌دهد. مرز مسئولیت شفاف‌تر؛ نیازمند SLA بین دو تیم.</p>
+      </div>
+
+      <div class="option">
+        <h4><span class="tag">حالت ج</span> تفویض کامل فروش و بازاریابی</h4>
+        <p>
+          طراحی ساختار و سیستم فروش داده‌محور کاملاً تفویض می‌شود. سیستم‌سازی با توسعه تیم و سرپرست‌ها شکل می‌گیرد؛
+          کارفرما از پیگیری شخصی فرایند فروش کنار می‌رود و روی توسعه کسب‌وکار متمرکز می‌شود.
+          تصمیمات رده مدیران ارشد با هماهنگی مدیرعامل انجام می‌پذیرد.
+        </p>
+        <p class="muted"><strong>تفاوت با الف:</strong> در حالت ج مالکیت طراحی و پیاده‌سازی استراتژی با مدیر فروش و بازاریابی است، نه صرفاً اجرای استراتژی ابلاغی کارفرما.</p>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>موضوع</th>
+            <th>حالت الف</th>
+            <th>حالت ج</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>مالک استراتژی فروش</td>
+            <td>عمدتاً کارفرما / مدیرعامل</td>
+            <td>مدیر فروش و بازاریابی</td>
+          </tr>
+          <tr>
+            <td>نقش کارفرما در فروش روزمره</td>
+            <td>جهت‌دهی و تأیید</td>
+            <td>خروج عملیاتی و تمرکز روی توسعه کسب‌وکار</td>
+          </tr>
+          <tr>
+            <td>دامنه اختیار مدیر</td>
+            <td>اجرای یکپارچه در چارچوب تعیین‌شده</td>
+            <td>طراحی و پیاده‌سازی کامل ساختار و استراتژی</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>تصمیم ۶ — دریافتی و درصد مدیر فروش‌بازاریابی</h2>
+      <p>
+        مبنای محاسبه: <strong>سود خالص حاصل از فروش تجهیزات</strong> در بازه <strong>۱۵٪ تا ۲۵٪</strong>.
+        درصد نیروهای فروش تلفنی نیز از همین سهم پرداخت می‌شود.
+      </p>
+      <p class="muted">
+        تعریف پیشنهادی: سود خالص فروش = مبلغ فروش − بهای تمام‌شده کالا − هزینه ارسال مستقیم − برگشتی‌ها
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>حالت</th>
+            <th>سهم کل از سود خالص</th>
+            <th>تقسیم پیشنهادی</th>
+            <th>پیشنهاد شروع</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ب — فقط فروش تلفنی</td>
+            <td>۱۵٪ تا ۱۸٪</td>
+            <td>۷–۱۰٪ تیم تلفنی + ۸–۱۰٪ مدیر</td>
+            <td>۱۶٪</td>
+          </tr>
+          <tr>
+            <td>الف — فروش + دیجیتال</td>
+            <td>۲۰٪ تا ۲۲٪</td>
+            <td>۸–۱۱٪ تیم تلفنی + ۱۰–۱۲٪ مدیر</td>
+            <td>۲۱٪</td>
+          </tr>
+          <tr>
+            <td>ج — تفویض کامل</td>
+            <td>۲۲٪ تا ۲۵٪</td>
+            <td>۸–۱۲٪ تیم تلفنی + ۱۲–۱۵٪ مدیر</td>
+            <td>۲۴٪</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <ul>
+        <li>در ۳ ماه اول می‌توان کف ثابت حداقلی + درصد در نظر گرفت (اختیاری).</li>
+        <li>پرداخت کمیسیون پس از فروش قطعی و کسر مرجوعی.</li>
+        <li>دسترسی شفاف مدیر به گزارش مبنای محاسبه ضروری است.</li>
+        <li>پس از ۹۰ روز، بازنگری درصد بر اساس عملکرد واقعی.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>نقشه راه ۹۰ روزه (پس از انتخاب گزینه‌ها)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>بازه</th>
+            <th>اقدام</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>هفته ۱</td><td>نهایی‌سازی تصمیم‌ها و KPI</td></tr>
+          <tr><td>هفته ۲</td><td>راه‌اندازی CRM و زیرساخت تلفن</td></tr>
+          <tr><td>هفته ۳</td><td>جذب نیرو + آموزش فنی و فروش</td></tr>
+          <tr><td>هفته ۴</td><td>اولین کمپین روی لیدها / خریداران قبلی</td></tr>
+          <tr><td>روز ۳۰–۶۰</td><td>بهینه‌سازی نرخ تبدیل و کیفیت لید</td></tr>
+          <tr><td>روز ۶۰–۹۰</td><td>اتصال کانال نمایندگی (در صورت انتخاب) + گزارش فصلی</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>برگه تصمیم کارفرما</h2>
+      <div class="checklist">
+        <h3>۱) دامنه CRM</h3>
+        <label><input type="checkbox" /> فقط تیم تلفنی</label>
+        <label><input type="checkbox" /> همه کانال‌ها</label>
+        <label><input type="checkbox" /> فازبندی: اول تلفنی، بعد همه</label>
+        <label><input type="checkbox" /> تفکیک تیمی / استانی فعال شود</label>
+
+        <h3>۲) زیرساخت تلفن</h3>
+        <label><input type="checkbox" /> سیم‌کارت شخصی</label>
+        <label><input type="checkbox" /> سیم‌کارت سازمانی</label>
+        <label><input type="checkbox" /> مرکز تماس ابری (نواتل یا مشابه)</label>
+        <label><input type="checkbox" /> شروع سازمانی، انتقال به ابری</label>
+
+        <h3>۳ و ۴) آموزش</h3>
+        <label><input type="checkbox" /> تأیید آموزش فنی توسط تیم فنی</label>
+        <label><input type="checkbox" /> تأیید آموزش فروش توسط اینجانب</label>
+
+        <h3>۵) مدل مدیریت</h3>
+        <label><input type="checkbox" /> حالت الف — دیجیتال + فروش</label>
+        <label><input type="checkbox" /> حالت ب — فقط فروش تلفنی</label>
+        <label><input type="checkbox" /> حالت ج — تفویض کامل</label>
+
+        <h3>۶) درصد از سود خالص</h3>
+        <label><input type="checkbox" /> حالت ب: ......٪ (پیشنهاد ۱۶٪)</label>
+        <label><input type="checkbox" /> حالت الف: ......٪ (پیشنهاد ۲۱٪)</label>
+        <label><input type="checkbox" /> حالت ج: ......٪ (پیشنهاد ۲۴٪)</label>
+        <label><input type="checkbox" /> تقسیم: تیم تلفنی ......٪ / مدیر ......٪</label>
+      </div>
+    </section>
+
+    <section>
+      <h2>جمع‌بندی</h2>
+      <p>
+        با حفظ کانال نمایندگی فعلی، می‌توان لایه CRM و فروش تلفنی را فعال کرد و فروش را از حالت پراکنده به سیستم داده‌محور قابل اندازه‌گیری رساند.
+        پس از تکمیل برگه تصمیم، نسخه اجرایی شامل انتخاب CRM، بودجه ماه اول، تقویم جذب نیرو و قرارداد همکاری آماده و پروژه آغاز می‌شود.
+      </p>
+    </section>
+
+    <p class="footer-note">
+      تهیه‌کننده: مدیر پیشنهادی فروش و بازاریابی تلفنی / توسعه کسب‌وکار<br />
+      مخاطب: کارفرمای محترم مجموعه تجهیزات پزشکی بهشتی لیتمن
+    </p>
+  </div>
+</body>
+</html>

@@ -1000,8 +1000,8 @@ h3 {
 .badge {
   position: absolute;
   top: -0.75rem;
-  inset-inline-start: 50%;
-  transform: translateX(50%);
+  left: 50%;
+  transform: translateX(-50%);
   background: var(--accent-warm);
   color: var(--white);
   font-size: 0.72rem;
@@ -1009,10 +1009,6 @@ h3 {
   padding: 0.3rem 0.7rem;
   border-radius: 999px;
   white-space: nowrap;
-}
-
-[dir="rtl"] .badge {
-  transform: translateX(50%);
 }
 
 .save {
